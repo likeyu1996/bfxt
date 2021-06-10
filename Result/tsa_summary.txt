@@ -1,0 +1,57 @@
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =            4     M =           12
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  4.92217D-01    |proj g|=  3.10801D-01
+ This problem is unconstrained.
+
+At iterate    5    f=  4.87654D-01    |proj g|=  3.20387D-02
+
+At iterate   10    f=  4.87647D-01    |proj g|=  3.09086D-05
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+    4     13     18      1     0     0   4.441D-08   4.876D-01
+  F =  0.487647191370278     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
+                              ARMA Model Results                              
+==============================================================================
+Dep. Variable:                      y   No. Observations:                   26
+Model:                     ARMA(2, 1)   Log Likelihood                 -12.679
+Method:                       css-mle   S.D. of innovations              0.377
+Date:                Thu, 25 Mar 2021   AIC                             35.358
+Time:                        01:49:45   BIC                             41.648
+Sample:                             0   HQIC                            37.169
+                                                                              
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          0.3041      0.021     14.406      0.000       0.263       0.345
+ar.L1.y        0.8340      0.191      4.376      0.000       0.460       1.207
+ar.L2.y       -0.2401      0.194     -1.240      0.215      -0.620       0.139
+ma.L1.y       -1.0000      0.111     -9.011      0.000      -1.218      -0.782
+                                    Roots                                    
+=============================================================================
+                  Real          Imaginary           Modulus         Frequency
+-----------------------------------------------------------------------------
+AR.1            1.7366           -1.0719j            2.0407           -0.0880
+AR.2            1.7366           +1.0719j            2.0407            0.0880
+MA.1            1.0000           +0.0000j            1.0000            0.0000
+-----------------------------------------------------------------------------
